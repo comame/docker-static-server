@@ -1,9 +1,3 @@
-static-server docker image for [comame.xyz](https://comame.xyz)
+Just serving static files with Nginx.
 
-Note that this server doesn't encrypt the connection.
-
-# How to Use
-
-`> docker pull comameito/static-server`
-Copy your files to `/files`
-
+`docker run -d -p 80:80 -v /path/to/files:/files comameito/static-server`
